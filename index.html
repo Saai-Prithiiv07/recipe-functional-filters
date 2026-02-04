@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Recipe Viewer</h1>
+  </header>
+
+  <section class="controls">
+    <select onchange="applyDifficulty(this.value)">
+      <option value="all">All</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <select onchange="applySort(this.value)">
+      <option value="">No Sort</option>
+      <option value="asc">Time ↑</option>
+      <option value="desc">Time ↓</option>
+    </select>
+  </section>
+
+  <main>
+    <div id="recipe-container"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
